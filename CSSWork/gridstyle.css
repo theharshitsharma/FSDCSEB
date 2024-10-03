@@ -1,0 +1,35 @@
+body{
+    background-color: aqua;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    height: 300px;
+    /* gap: 10px; */
+    
+    border: 2px solid red;
+
+}
+.row1,.row2,.row3{
+    border: 1px dotted black;
+}
+.row1{
+    /* grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2; */
+    grid-column: 3/8;
+    grid-row: 1/2;
+    display: grid;
+    background-color: rgb(121, 218, 32);
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+}
+.row1col1,.row1col2,.row1col3,.row1col4{
+    height: 73px;
+    border: 1px solid red;
+}
+.row1col1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
