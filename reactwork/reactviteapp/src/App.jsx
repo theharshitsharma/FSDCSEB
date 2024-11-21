@@ -1,39 +1,50 @@
 import React from 'react'
 import Student from './Student';
+// import UseStudentState from './UseStudentState';
+import Imagemanipulation from './Imagemanipulation';
+import MyUseEffect from './MyUseEffect';
+import UseFetchAPI from './UseFetchAPI';
 function App()
 {
-  const h1=<h1>FSD:-React Work</h1>;
+  const h1=<h1>hello world</h1>;
   const mystyle={
-    color:'blue',
-    backgroundColor:'orange'
+    color:'red',
+    backgroundColor:'white'
   }
   const studentdata=[{
     college:"ABES engineering college",
-    name:"Harshit sharma",
-    branch:"cs a",
-    roll:22,
+    name:"Harshit luanda",
+    branch:"cs m",
+    roll:"200",
     section:"A"
-  },
-  {
-    college:"ABES engineering college",
-    name:"Harshit verma",
-    branch:"cs a",
-    roll:24,
-    section:"A"
-  },
-  {
-    college:"ABES engineering college",
-    name:"Harshit maurya",
-    branch:"cs a",
-    roll:"235",
-    section:"A"
-  }]
-  return (
-    <div> <h2> Hello using use state hook</h2>
-    {/* <div><UseStudentState /></div> */}
-    </div>
+    
+  },{
+    college:"gl engineering college",
+    name:"Harshit jindabad",
+    branch:"cs c",
+    roll:"2",
+    section:"B"
+  },{
+    college:"Akg engineering college",
+    name:"Harshit bro",
+    branch:"cs b",
+    roll:"234777",
+    section:"b"
+  }
 
-    // <div style={{backgroundColor:'red'}}>
+  
+]
+  return (
+    <div ><h2>hello using useeffect hook statement</h2>
+    {/* <div><UseStudentState /></div> */}
+    {/* <Imagemanipulation></Imagemanipulation> */}
+    {/* <MyUseEffect/>*/}
+    <UseFetchAPI/>
+    
+    </div>
+    
+
+    // <div style={{backgroundColor:'blueviolet'}}>
     //   {h1}
     //   <div style={mystyle}> 
     //     ABES Engineering college
@@ -42,11 +53,10 @@ function App()
     //     {
     //       studentdata.map(
     //         (ele)=>{
-    //           return <Student data={ele}/>
+    //          return <Student data ={ele}/>
     //         }
     //       )
     //     }
-    //     {/* <Student data={studentdata[1]}/> */}
     //     {/* <Student college="ABES ENGINEERING COLLEGE"
     //     name="harshit"
     //     branch="cse"
