@@ -1,5 +1,6 @@
 import React from 'react'
 import Student from './Student';
+import login from './login';
 // import UseStudentState from './UseStudentState';
 import Imagemanipulation from './Imagemanipulation';
 import MyUseEffect from './MyUseEffect';
@@ -39,7 +40,9 @@ function App()
     {/* <div><UseStudentState /></div> */}
     {/* <Imagemanipulation></Imagemanipulation> */}
     {/* <MyUseEffect/>*/}
-    <UseFetchAPI/>
+    {/* <UseFetchAPI/> */}
+    <login/>
+
     
     </div>
     
